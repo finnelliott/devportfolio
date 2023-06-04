@@ -11,7 +11,6 @@ function classNames(...classes: string[]) {
 const experiences = [
     {
         role: "Freelance Marketer",
-        company: "Self-Employed",
         date: "June 2022 - Present",
         body: <>I&apos;ve spent the past year supporting a number of small businesses with their marketing. I&apos;ve designed & developed websites for dentists, private investigators and pre-revenue startups. I&apos;ve also devised and implemented SEO and PPC marketing campaigns for dentists and lawyers.
         <ul>
@@ -50,7 +49,10 @@ export default function Background() {
                                 <>
                                 <Disclosure.Button className="group flex w-full justify-between rounded-md transition-all duration-500 text-left text-sm font-medium focus:outline-none py-4 px-4">
                                     <div className="w-full flex items-center justify-between">
-                                        <h3 className="text-xl font-medium text-gray-200">{experience.role}</h3>
+                                        <div className="flex flex-col">
+                                            <h3 className="text-xl font-medium text-gray-200">{experience.role}</h3>
+                                            {experience.company && <p className="text-gray-400 text-sm mt-2">{experience.company}</p>}
+                                        </div>
                                         <div className="flex items-center space-x-2">
                                             <p className="text-gray-400 text-sm">{experience.date}</p>
                                             <ChevronUpIcon
@@ -70,8 +72,8 @@ export default function Background() {
                                     leaveFrom="transform scale-100 opacity-100"
                                     leaveTo="transform scale-95 opacity-0"
                                 >
-                                <Disclosure.Panel static className={classNames(open ? "max-h-[1000px]" : "max-h-0", "h-full w-full transition-all duration-500")}>
-                                    <div className="prose w-full px-4 pb-4 text-sm text-gray-500">
+                                <Disclosure.Panel static className={classNames(open ? "max-h-[24rem]" : "max-h-0", "h-full w-full transition-all duration-500")}>
+                                    <div className="prose w-full px-4 pt-2 pb-4 text-sm text-gray-500">
                                     {experience.body}
                                     </div>
                                 </Disclosure.Panel>
