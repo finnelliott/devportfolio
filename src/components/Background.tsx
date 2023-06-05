@@ -48,18 +48,13 @@ export default function Background() {
                             {({ open }) => (
                                 <>
                                 <Disclosure.Button className="group flex w-full justify-between rounded-md transition-all duration-500 text-left text-sm font-medium focus:outline-none py-4 px-4">
-                                    <div className="w-full flex items-center justify-between">
-                                        <div className="flex flex-col">
+                                    <div className="w-full flex flex-col sm:flex-row items-start justify-center sm:justify-between">
+                                        <div className="flex flex-col items-start justify-center">
                                             <h3 className="text-xl font-medium text-gray-200">{experience.role}</h3>
                                             {experience.company && <p className="text-gray-400 text-sm mt-2">{experience.company}</p>}
                                         </div>
-                                        <div className="flex items-center space-x-2">
+                                        <div className="flex items-center">
                                             <p className="text-gray-400 text-sm">{experience.date}</p>
-                                            <ChevronUpIcon
-                                            className={`${
-                                                open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-gray-500 group-hover:rotate-90 transition-all duration-500`}
-                                            />
                                         </div>
                                     </div>
                                 </Disclosure.Button>
@@ -72,7 +67,7 @@ export default function Background() {
                                     leaveFrom="transform scale-100 opacity-100"
                                     leaveTo="transform scale-95 opacity-0"
                                 >
-                                <Disclosure.Panel static className={classNames(open ? "max-h-[24rem]" : "max-h-0", "h-full w-full transition-all duration-500")}>
+                                <Disclosure.Panel static className={classNames(open ? "max-h-[36rem]" : "max-h-0", "h-full w-full transition-all duration-500")}>
                                     <div className="prose w-full px-4 pt-2 pb-4 text-sm text-gray-500">
                                     {experience.body}
                                     </div>

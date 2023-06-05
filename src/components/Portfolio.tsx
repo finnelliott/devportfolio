@@ -44,7 +44,7 @@ export default function Portfolio() {
             <p className="text-gray-400 mt-2">These are some of the personal projects that I&apos;ve worked on in the past few&nbsp;months.</p>
             <nav className="flex flex-col space-y-4">
                 {projects.map((project, index) => (
-                    <Link href={project.href} key={index} className="mt-8 flex items-center space-x-4 group transition-all duration-500 hover:bg-black p-1 rounded-lg">
+                    <Link href={project.href} key={index} className="mt-8 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-x-4 group transition-all duration-500 hover:bg-black p-4 sm:p-1 rounded-lg">
                         <Image
                             src={project.image}
                             alt={project.title}
