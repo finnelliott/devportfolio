@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Page({ params }: { params: { slug: string } }) {
     const project = projects.find((project) => project.slug === params.slug);
-    if (!project) return <Slide>Sorry, this project doesn't exist. Return to <Link href="" className="underline hover:text-gray-200">home</Link>.</Slide>;
+    if (!project) return <Slide>Sorry, this project doesn&apos;t exist. Return to <Link href="" className="underline hover:text-gray-200">home</Link>.</Slide>;
     return (
         <main>
         <ProjectHero project={project} />
