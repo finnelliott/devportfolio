@@ -2,7 +2,6 @@
 
 import { Disclosure, Transition } from "@headlessui/react";
 import Slide from "./Slide";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -29,7 +28,7 @@ const experiences = [
         role: "BSc Business Administration",
         company: "University of Bath",
         date: "2018 - 2022",
-        body: <><ul><li>Achieved a 2:1</li><li>Founded a profitable inter-city travel and events company for students. Built custom e-ticketing solution to minimise costs and sold out all events with effective social media marketing.</li></ul></>
+        body: <><ul><li>Achieved a 2:1.</li><li>Founded a profitable inter-city travel and events company for students. Built custom e-ticketing solution to minimise costs and sold out all events with effective social media marketing.</li></ul></>
     }
 ]
 
