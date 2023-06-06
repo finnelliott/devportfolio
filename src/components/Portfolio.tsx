@@ -1,41 +1,7 @@
 import Image from "next/image";
 import Slide from "./Slide";
 import Link from "next/link";
-
-const projects = [
-    {
-        title: "Victula",
-        description: "The easiest way to track your nutrition.",
-        image: "/images/victula.png",
-        href: "/projects/victula",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "OpenAI", "Mongo", "Vercel"],
-        tags: [ "Health", "Web", "AI" ]
-    },
-    {
-        title: "AI Card Craft",
-        description: "Generate unique greetings cards with AI. Then send them to friends and family.",
-        image: "/images/ai-card-craft.png",
-        href: "/projects/ai-card-craft",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Stability AI", "Mongo", "Vercel", "Digital Ocean", "Stripe", "Prodigi"],
-        tags: [ "AI", "Web", "E-Commerce" ]
-    },
-    {
-        title: "Mistrata",
-        description: "Performant dental websites as a service.",
-        image: "/images/mistrata.png",
-        href: "/projects/mistrata",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Mongo", "Vercel", "Payload", "Digital Ocean"],
-        tags: [ "Health", "Web" ]
-    },
-    {
-        title: "Whitenoise FM",
-        description: "A website and app that only play white noise.",
-        image: "/images/whitenoise-fm.png",
-        href: "/projects/whitenoise-fm",
-        technologies: ["iOS", "Swift", "HTML", "CSS", "JavaScript", "Digital Ocean"],
-        tags: [ "Music", "Web", "iOS" ]
-    }
-]
+import { projects } from "@/data/projects";
 
 export default function Portfolio() {
     return (
@@ -44,7 +10,7 @@ export default function Portfolio() {
             <p className="text-gray-400 mt-2">These are some of the personal projects that I&apos;ve worked on in the past few&nbsp;months.</p>
             <nav className="flex flex-col space-y-4">
                 {projects.map((project, index) => (
-                    <Link href={project.href} key={index} className="mt-8 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-x-4 group transition-all duration-500 hover:bg-black p-4 sm:p-1 rounded-lg">
+                    <Link href={project.href} key={index} className="mt-8 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-x-4 sm:space-y-0 group transition-all duration-500 hover:bg-black p-4 sm:p-1 rounded-lg">
                         <Image
                             src={project.image}
                             alt={project.title}

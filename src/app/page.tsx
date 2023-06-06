@@ -12,9 +12,9 @@ export default function Home() {
     <main>
       <Hero />
       <div className="relative">
-        <div className="z-30"><Technologies /></div>
-        <div className="z-20"><Portfolio /></div>
-        <div className="z-10"><Background /></div>
+        <div className="z-30"><Portfolio /></div>
+        <div className="z-20"><Background /></div>
+        <div className="z-10"><Technologies /></div>
       </div>
     </main>
   )
