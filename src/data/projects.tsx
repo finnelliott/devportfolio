@@ -21,7 +21,7 @@ export const projects = [
         href: "/projects/ai-card-craft",
         technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Stability AI", "Mongo", "Vercel", "Digital Ocean", "Stripe", "Prodigi"],
         tags: [ "AI", "Web", "E-Commerce" ],
-        github_url: "https://github.com/finnelliott/ai-card-craft",
+        github_url: "https://github.com/finnelliott/aicardcraft",
         url: "https://www.aicardcraft.com",
         details:<>
         AI Card Craft was a hard project.
