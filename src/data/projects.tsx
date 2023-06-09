@@ -41,18 +41,18 @@ export const projects = [
         Mistrata was a hard project.
         </>
     },
-    {
-        title: "Whitenoise FM",
-        slug: "whitenoise-fm",
-        description: "A website and app that only play white noise.",
-        image: "/images/whitenoise-fm.png",
-        href: "/projects/whitenoise-fm",
-        technologies: ["iOS", "Swift", "HTML", "CSS", "JavaScript", "Digital Ocean"],
-        tags: [ "Music", "Web", "iOS" ],
-        github_url: "https://github.com/finnelliott/whitenoise-fm",
-        url: "https://whitenoise.fm",
-        details: <>
-        Whitenoise FM was a hard project.
-        </>
-    }
+    // {
+    //     title: "Whitenoise FM",
+    //     slug: "whitenoise-fm",
+    //     description: "A website and app that only play white noise.",
+    //     image: "/images/whitenoise-fm.png",
+    //     href: "/projects/whitenoise-fm",
+    //     technologies: ["iOS", "Swift", "HTML", "CSS", "JavaScript", "Digital Ocean"],
+    //     tags: [ "Music", "Web", "iOS" ],
+    //     github_url: "https://github.com/finnelliott/whitenoise-fm",
+    //     url: "https://whitenoise.fm",
+    //     details: <>
+    //     Whitenoise FM was a hard project.
+    //     </>
+    // }
 ]
