@@ -56,21 +56,26 @@ const navigation = [
 
 export default function Header() {
     return (
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex items-center justify-between">
-            <Link href="/">
-                <span className="sr-only">Finn Elliott</span>
-                <NameSVG className="w-36 h-4 text-gray-50" />
-            </Link>
-            <ul className="flex space-x-6 items-center">
-                {navigation.map((item) => (
-                    <li key={item.name} className="">
-                        <a href={item.href} target="_blank" rel="noopener noreferrer">
-                            <span className="sr-only">{item.name}</span>
-                            <item.icon className="w-5 h-5 text-gray-400 hover:text-gray-200 transition-all duration-200" />
-                        </a>
-                    </li>
-                ))}
-            </ul>
+        <>
+        <nav className="z-50 fixed top-0 w-full bg-gray-900 bg-opacity-20 border-b border-gray-400 border-opacity-25 backdrop-blur-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex items-center justify-between">
+                <Link href="/">
+                    <span className="sr-only">Finn Elliott</span>
+                    <NameSVG className="w-36 h-4 text-gray-50" />
+                </Link>
+                <ul className="flex space-x-6 items-center">
+                    {navigation.map((item) => (
+                        <li key={item.name} className="">
+                            <a href={item.href} target="_blank" rel="noopener noreferrer">
+                                <span className="sr-only">{item.name}</span>
+                                <item.icon className="w-5 h-5 text-gray-400 hover:text-gray-200 transition-all duration-200" />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
+        <div className="h-28"></div> {/* Spacer for nav bar */}
+        </>
     )
 }
