@@ -7,7 +7,7 @@ export default function Hero() {
                     <h2 className="text-2xl font-medium text-gray-600 capitalize mt-2">Full-stack web developer</h2>
                 </div>
                 <div className="z-10 absolute w-full h-full top-0 left-0 object-cover">
-                    <div style={{position: "relative", paddingTop: "177.777777778%" }} ><iframe src="https://customer-v2h1xfqvigafdf4t.cloudflarestream.com/70b0a69f92eccb460cfb97cf705c84b5/iframe?poster=https%3A%2F%2Fcustomer-v2h1xfqvigafdf4t.cloudflarestream.com%2F70b0a69f92eccb460cfb97cf705c84b5%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" style={{border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%"}} allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowFullScreen={true}></iframe></div>
+                    <div style={{position: "relative", paddingTop: "177.777777778%" }} className="rounded-lg lg:rounded-[32px] overflow-hidden" ><iframe className="rounded-lg lg:rounded-[32px] overflow-hidden" src="https://customer-v2h1xfqvigafdf4t.cloudflarestream.com/70b0a69f92eccb460cfb97cf705c84b5/iframe?poster=https%3A%2F%2Fcustomer-v2h1xfqvigafdf4t.cloudflarestream.com%2F70b0a69f92eccb460cfb97cf705c84b5%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" style={{border: "none", position: "absolute", top: 0, left: 0, height: "100%", width: "100%"}} allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowFullScreen={true}></iframe></div>
                 </div>
             </div>
         </section>
